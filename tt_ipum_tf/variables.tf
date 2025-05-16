@@ -9,7 +9,7 @@ variable "github_token" {
 variable "repository_name" {
   description = "Name of the GitHub repository to create"
   type        = string
-  default     = "ipum_terraform-managed-repo"
+  default     = "ipum-terraform-managed-repo"
 }
 
 variable "repository_description" {
