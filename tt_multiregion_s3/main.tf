@@ -15,5 +15,18 @@ terraform {
    }
 }
 
+provider "aws" {
+  alias  = "us-east1"
+  region = var.regions[0]
+}
 
+provider "aws" {
+  alias = "us-west1"
+  region = var.regions[1]
+}
+
+provider "aws" {
+  alias  = "eu-central1"
+  region = var.regions[2]
+}
 
