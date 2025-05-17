@@ -1,14 +1,12 @@
 # providers.tf
 
 
-# default provider configuration
 provider "aws" {
+  alias = "west1"
   region = var.regions[0]
 }
 
-
-# provider alias with another region
 provider "aws" {
-  alias  = "us_west_2"
-  region = "us-west-2"
+  alias  = "east1"
+  region = var.regions[1]
 }
